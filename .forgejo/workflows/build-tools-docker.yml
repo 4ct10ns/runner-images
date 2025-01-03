@@ -10,6 +10,7 @@ on:
       - 'linux/debian/**'
     branches:
       - 'master'
+      - 'runner/dind'
   pull_request:
     paths:
       - '.forgejo/workflows/build-tools-docker.yml'
