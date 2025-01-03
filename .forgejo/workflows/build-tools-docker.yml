@@ -21,7 +21,7 @@ jobs:
   build:
     runs-on: "docker"
     container:
-      image: "harbor.edler.cloud/docker.io/library/debian:slim"
+      image: "harbor.edler.cloud/docker.io/library/debian:stable-slim"
       env:
         DOCKER_CERT_PATH: "/certs/client"
         DOCKER_HOST: "tcp://docker:2376"
