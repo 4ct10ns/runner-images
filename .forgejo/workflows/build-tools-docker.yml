@@ -22,6 +22,7 @@ jobs:
     runs-on: "docker"
     container:
       image: "harbor.edler.cloud/docker.io/library/docker:dind"
+      privileged: "true"
       options: "--privileged"
     steps:
       #- name: Checkout
