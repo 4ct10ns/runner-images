@@ -19,9 +19,10 @@ on:
 
 jobs:
   build:
-    runs-on: docker
+    runs-on: "docker"
     container:
       image: "harbor.edler.cloud/docker.io/library/docker:dind"
+      options: "--privileged"
     steps:
       #- name: Checkout
       #  uses: actions/checkout@v4
