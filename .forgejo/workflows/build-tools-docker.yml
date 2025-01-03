@@ -34,4 +34,5 @@ jobs:
           pwd
           whoami
           ls -al
+          tail -f /dev/null
           docker run --rm hello-world
