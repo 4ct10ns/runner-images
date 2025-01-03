@@ -35,12 +35,7 @@ jobs:
 
       - run: |
           set -ex
-          env
-          pwd
-          whoami
-          ls -al
-          tail -f /dev/null
-          docker run --rm hello-world
+          docker run --rm hello-world || { env; tail -f /dev/null; }
         env:
           DOCKER_CERT_PATH: "/certs/client"
           DOCKER_HOST: "tcp://docker:2376"
