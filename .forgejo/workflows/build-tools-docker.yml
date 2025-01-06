@@ -36,9 +36,11 @@ jobs:
         volumes:
           - "certs:/certs"
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: "Checkout"
+        uses: "actions/checkout@v4"
 
-      - run: |
+      - name: "Script"
+        run: |
           set -ex
+          ls -al
           docker run --rm hello-world || { env; tail -f /dev/null; }
