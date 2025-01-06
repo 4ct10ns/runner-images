@@ -36,8 +36,8 @@ jobs:
         volumes:
           - "certs:/certs"
     steps:
-      #- name: Checkout
-      #  uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - run: |
           set -ex
